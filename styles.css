@@ -292,25 +292,30 @@ button {
   fill: url(#bodyWhite);
 }
 
-.pedestrian .neck,
-.pedestrian .body-highlight {
-  fill: none;
-  stroke: rgba(255, 255, 255, 0.54);
-  stroke-width: 4;
-  stroke-linecap: round;
-}
-
-.pedestrian .arm path,
-.pedestrian .leg path {
+.pedestrian .limb {
   fill: none;
   stroke: url(#bodyWhite);
-  stroke-width: 28;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
+.pedestrian .arm {
+  stroke-width: 23;
+}
+
+.pedestrian .leg {
+  stroke-width: 29;
+}
+
 .pedestrian .rear {
-  opacity: 0.9;
+  opacity: 0.88;
+}
+
+.pedestrian .icon-highlight {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.5);
+  stroke-width: 4;
+  stroke-linecap: round;
 }
 
 .street-lamp {
