@@ -11,166 +11,39 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="hero" id="home">
-      <header class="site-header" aria-label="Primary">
-        <a class="brand" href="#home" aria-label="Feel2see home">
-          <span>Feel</span><span class="brand-two">2</span><span>see</span>
-        </a>
+    <main class="hero" aria-label="Feel2see landing page">
+      <div class="hero-frame">
+        <img
+          class="scene-artwork"
+          src="assets/images/hero-scene-clean.png"
+          data-fallback="assets/images/hero-feel2see.png"
+          alt=""
+          aria-hidden="true"
+        />
 
-        <nav class="main-nav" aria-label="Main navigation">
-          <a class="is-active" href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#features">Features</a>
-          <a href="#technology">Technology</a>
-          <a href="#team">Team</a>
-          <a href="#contact">Contact</a>
-        </nav>
+        <header class="site-header" aria-label="Primary">
+          <a class="brand" href="#home" aria-label="Feel2see home">
+            <span>Feel</span><span class="brand-two">2</span><span>see</span>
+          </a>
 
-        <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </header>
+          <nav class="main-nav" aria-label="Main navigation">
+            <a class="is-active" href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#technology">Technology</a>
+            <a href="#team">Team</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </header>
 
-      <section class="hero-content" aria-label="Feel2see hero">
-        <div class="copy-panel">
+        <section class="hero-copy" id="home" aria-label="Feel2see introduction">
           <h1 class="hero-logo"><span>Feel</span><span>2</span><span>see</span></h1>
           <p class="tagline">See more. <span>Protect better.</span></p>
           <p class="subline">AI-powered detection that sees what matters &mdash; day or night.</p>
           <a class="cta" href="#features">Learn More</a>
-        </div>
+        </section>
 
-        <div class="visual-panel" aria-hidden="true">
-          <svg
-            class="scene"
-            viewBox="0 0 1000 620"
-            role="img"
-            aria-label="Pedestrian detection scene with radar waves and a street lamp"
-            preserveAspectRatio="xMidYMid meet"
-          >
-            <defs>
-              <radialGradient id="floorGlow" cx="50%" cy="50%" r="50%">
-                <stop offset="0%" stop-color="#9fd8ff" stop-opacity="0.42" />
-                <stop offset="48%" stop-color="#0b5d8f" stop-opacity="0.12" />
-                <stop offset="100%" stop-color="#020405" stop-opacity="0" />
-              </radialGradient>
-              <radialGradient id="redHalo" cx="50%" cy="50%" r="50%">
-                <stop offset="0%" stop-color="#ff584a" stop-opacity="0.9" />
-                <stop offset="42%" stop-color="#ff312a" stop-opacity="0.24" />
-                <stop offset="100%" stop-color="#ff312a" stop-opacity="0" />
-              </radialGradient>
-              <linearGradient id="lampMetal" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stop-color="#16202a" />
-                <stop offset="22%" stop-color="#7e98a8" />
-                <stop offset="52%" stop-color="#f0f7ff" />
-                <stop offset="74%" stop-color="#415360" />
-                <stop offset="100%" stop-color="#071018" />
-              </linearGradient>
-              <linearGradient id="lampShade" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#8aa5b5" />
-                <stop offset="48%" stop-color="#111a23" />
-                <stop offset="100%" stop-color="#03070c" />
-              </linearGradient>
-              <linearGradient id="bodyWhite" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#ffffff" />
-                <stop offset="54%" stop-color="#f4f8fb" />
-                <stop offset="100%" stop-color="#cfd8df" />
-              </linearGradient>
-              <filter id="blueGlow" x="-60%" y="-60%" width="220%" height="220%">
-                <feGaussianBlur stdDeviation="4" result="blur" />
-                <feMerge>
-                  <feMergeNode in="blur" />
-                  <feMergeNode in="SourceGraphic" />
-                </feMerge>
-              </filter>
-              <filter id="whiteGlow" x="-45%" y="-45%" width="190%" height="190%">
-                <feGaussianBlur stdDeviation="5" result="blur" />
-                <feMerge>
-                  <feMergeNode in="blur" />
-                  <feMergeNode in="SourceGraphic" />
-                </feMerge>
-              </filter>
-              <filter id="redGlow" x="-70%" y="-70%" width="240%" height="240%">
-                <feGaussianBlur stdDeviation="6" result="blur" />
-                <feMerge>
-                  <feMergeNode in="blur" />
-                  <feMergeNode in="SourceGraphic" />
-                </feMerge>
-              </filter>
-              <filter id="lampGlow" x="-90%" y="-90%" width="280%" height="280%">
-                <feGaussianBlur stdDeviation="11" result="blur" />
-                <feMerge>
-                  <feMergeNode in="blur" />
-                  <feMergeNode in="SourceGraphic" />
-                </feMerge>
-              </filter>
-            </defs>
-
-            <g class="ambient">
-              <ellipse cx="370" cy="575" rx="190" ry="42" fill="url(#floorGlow)" opacity="0.58" />
-              <ellipse cx="805" cy="573" rx="150" ry="32" fill="#ff443a" opacity="0.13" />
-            </g>
-
-            <g class="light-cone">
-              <path d="M 806 118 L 626 560 L 908 560 Z" fill="#b8e8ff" opacity="0.055" />
-              <path d="M 806 126 L 700 560 L 888 560 Z" fill="#dff6ff" opacity="0.065" />
-            </g>
-
-            <g class="radar-field" filter="url(#blueGlow)">
-              <line class="radar-axis" x1="180" y1="358" x2="834" y2="358" />
-              <path class="wave wave-1" d="M 379 446 C 467 404 467 312 379 270" />
-              <path class="wave wave-2" d="M 421 482 C 548 420 548 296 421 234" />
-              <path class="wave wave-3" d="M 463 514 C 630 432 630 284 463 202" />
-              <path class="wave wave-4" d="M 508 542 C 713 440 713 276 508 174" />
-              <path class="wave wave-5" d="M 555 562 C 800 450 800 266 555 154" />
-              <path class="wave wave-6" d="M 604 574 C 890 456 890 260 604 142" />
-            </g>
-
-            <g class="pedestrian" filter="url(#whiteGlow)">
-              <g class="pedestrian-icon" transform="translate(330 425) scale(0.94)">
-                <path class="limb leg rear" d="M 12 -17 L 44 42 L 67 103" />
-                <path class="limb leg front" d="M -3 -18 L -30 46 L -81 112" />
-                <path class="limb arm rear" d="M -18 -88 L -44 -54 L -52 -16" />
-                <rect class="torso" x="-21" y="-124" width="66" height="108" rx="25" transform="rotate(12 12 -70)" />
-                <path class="limb arm front" d="M 36 -87 L 52 -54 L 77 -36" />
-                <circle class="head" cx="10" cy="-164" r="32" />
-                <path class="icon-highlight" d="M 8 -112 C 27 -90 32 -58 21 -22" />
-              </g>
-            </g>
-
-            <g class="street-lamp">
-              <ellipse class="lamp-bloom" cx="808" cy="128" rx="55" ry="24" fill="#c7f0ff" opacity="0.16" filter="url(#lampGlow)" />
-              <path class="lamp-arm" d="M 813 101 C 846 99 860 104 866 120" />
-              <rect class="lamp-pole" x="842" y="120" width="9" height="424" rx="4.5" />
-              <rect class="lamp-pole shade" x="839" y="321" width="15" height="6" rx="3" />
-              <rect class="lamp-pole shade" x="839" y="444" width="15" height="6" rx="3" />
-              <path class="lamp-head" d="M 765 91 C 796 78 844 89 859 105 L 859 119 C 830 111 795 109 765 116 Z" />
-              <ellipse class="lamp-light" cx="807" cy="121" rx="42" ry="10" />
-              <rect class="lamp-pole" x="858" y="93" width="10" height="72" rx="4" />
-              <path class="lamp-base" d="M 832 545 L 861 545 L 873 592 L 818 592 Z" />
-              <rect class="lamp-base foot" x="809" y="588" width="72" height="11" rx="5" />
-            </g>
-
-            <g class="detection" filter="url(#redGlow)">
-              <ellipse class="red-core" cx="813" cy="359" rx="34" ry="75" fill="url(#redHalo)" />
-              <circle class="red-ring red-ring-main" cx="813" cy="359" r="58" />
-              <circle class="red-ring red-ring-soft" cx="813" cy="359" r="82" />
-              <circle class="red-ring red-ring-dashed" cx="813" cy="359" r="100" />
-              <line class="red-scan" x1="813" y1="281" x2="813" y2="439" />
-              <circle class="red-dot" cx="813" cy="359" r="5" />
-            </g>
-
-            <g class="ground">
-              <path d="M 22 578 L 986 578" />
-              <path d="M 44 602 L 370 602" class="road-line cool" />
-              <path d="M 674 602 L 975 602" class="road-line warm" />
-              <path d="M 0 558 C 180 554 306 556 430 558 C 586 561 754 556 1000 558" class="floor-edge" />
-            </g>
-          </svg>
-        </div>
-
-        <div class="feature-strip" id="features" aria-label="Key features">
+        <section class="feature-strip" id="features" aria-label="Key features">
           <article class="feature-card">
             <svg viewBox="0 0 48 48" aria-hidden="true">
               <circle cx="24" cy="24" r="17"></circle>
@@ -178,32 +51,28 @@
               <circle cx="24" cy="24" r="3"></circle>
               <path d="M24 5v6M24 37v6M5 24h6M37 24h6"></path>
             </svg>
-            <div>
-              <h2>Smart Detection</h2>
-              <p>Real-time monitoring with high accuracy</p>
-            </div>
+            <h2>Smart Detection</h2>
+            <p>Real-time monitoring with high accuracy</p>
           </article>
+
           <article class="feature-card">
             <svg viewBox="0 0 48 48" aria-hidden="true">
               <path d="M24 5 39 11v12c0 9-6 16-15 20C15 39 9 32 9 23V11l15-6Z"></path>
               <path d="m17 24 5 5 10-12"></path>
             </svg>
-            <div>
-              <h2>Enhanced Safety</h2>
-              <p>Protect pedestrians and communities</p>
-            </div>
+            <h2>Enhanced Safety</h2>
+            <p>Protect pedestrians and communities</p>
           </article>
+
           <article class="feature-card">
             <svg viewBox="0 0 48 48" aria-hidden="true">
               <path d="M17 35H35a9 9 0 0 0 0-18 12 12 0 0 0-23-1A9.5 9.5 0 0 0 17 35Z"></path>
             </svg>
-            <div>
-              <h2>Cloud Connected</h2>
-              <p>Seamless data sync continuity</p>
-            </div>
+            <h2>Cloud Connected</h2>
+            <p>Seamless data sync continuity</p>
           </article>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
 
     <script src="script.js"></script>
