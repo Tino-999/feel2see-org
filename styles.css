@@ -301,16 +301,17 @@ a {
   }
 
   .scene-artwork {
-    inset: auto;
+    top: auto;
+    right: auto;
+    bottom: 7svh;
     left: 0;
-    bottom: 2.5svh;
-    width: 100vw;
+    width: 120vw;
     max-width: none;
     height: auto;
-    transform: translateX(3%) scale(1.55);
-    transform-origin: 50% 82%;
-    object-fit: contain;
-    object-position: center;
+    object-fit: cover;
+    object-position: 58% 70%;
+    transform: translateX(-22vw) scale(1.68);
+    transform-origin: 50% 84%;
   }
 
   .site-header {
