@@ -284,9 +284,82 @@ a {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+  .hero {
+    position: relative;
+    height: 100svh;
+    min-height: 100svh;
+    overflow: hidden;
+    place-items: stretch;
+  }
+
+  .hero-frame {
+    width: 100vw;
+    height: 100svh;
+    min-height: 100svh;
+    aspect-ratio: auto;
+  }
+
+  .scene-artwork {
+    inset: auto;
+    left: 0;
+    bottom: 2.5svh;
+    width: 100vw;
+    max-width: none;
+    height: auto;
+    transform: translateX(3%) scale(1.55);
+    transform-origin: 50% 82%;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .site-header {
+    top: 3.4svh;
+    left: 5vw;
+    right: 5vw;
+  }
+
   .main-nav {
     gap: clamp(0.18rem, 4.4vh, 1.2rem);
+  }
+
+  .hero-copy {
+    top: 12.5svh;
+    left: 5.8vw;
+    width: 54vw;
+  }
+
+  .hero-logo {
+    margin-bottom: 0.7rem;
+    font-size: clamp(2.1rem, 12vw, 3rem);
+  }
+
+  .tagline {
+    margin-bottom: 0.45rem;
+    font-size: clamp(0.82rem, 4.4vw, 1.05rem);
+    line-height: 1.1;
+    white-space: normal;
+  }
+
+  .subline {
+    max-width: 12rem;
+    font-size: clamp(0.62rem, 3vw, 0.76rem);
+    line-height: 1.35;
+  }
+
+  .cta {
+    width: 6.9rem;
+    height: 2.15rem;
+    margin-top: 0.9rem;
+    border-radius: 0.45rem;
+    font-size: 0.78rem;
+  }
+
+  .feature-strip {
+    left: 5vw;
+    bottom: 5svh;
+    width: 34vw;
+    gap: 10%;
   }
 
   .feature-card p {
